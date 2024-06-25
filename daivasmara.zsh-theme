@@ -21,7 +21,7 @@ ZSH_THEME_GIT_PROMPT_SHA_BEFORE="◯  %{$fg_bold[yellow]%}"
 ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$reset_color%}"
 
 function prompt_char() {
-  echo "%{$fg[red]%}あす%{$reset_color%}"
+  echo "%{$fg[red]%}mañana%{$reset_color%}"
 }
 
 # Colors vary depending on time lapsed.
@@ -77,7 +77,7 @@ function git_time_since_commit() {
 }
 
 PROMPT='
-%{$fg[yellow]%}%m%{$reset_color%} %{$fg[white]%}明日は明日の風が吹く%{$reset_color%} %{$fg[red]%}%(5~|%-1~/…/%3~|%4~) %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
+%{$fg[yellow]%}%m%{$reset_color%} %{$fg[white]%}I don't get japanese philosophyく%{$reset_color%} %{$fg[red]%}%(5~|%-1~/…/%3~|%4~) %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
 $(prompt_char) '
 
 RPROMPT='${return_status}$(git_time_since_commit)$(git_prompt_status)%{$reset_color%}'
